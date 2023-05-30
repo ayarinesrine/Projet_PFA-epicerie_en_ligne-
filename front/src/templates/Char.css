@@ -1,0 +1,15 @@
+.char {
+  background-color: #469a08;
+  color: white;
+  border-radius: 1000px 0px 0px 1000px;
+  height: 80vh;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+}
+.place {
+  background-image: url(./../assests/place.png);
+  background-size: cover;
+}
