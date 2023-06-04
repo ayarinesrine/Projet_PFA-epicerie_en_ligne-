@@ -1,0 +1,149 @@
+header {
+  z-index: 999;
+  position: absolute;
+  background-color: aqua;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 200px;
+  transition: 0.5s ease;
+}
+h2 {
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.text-muted {
+  font-size: 15px;
+}
+header .brand {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header .navigation {
+  position: relative;
+}
+header .navigation .navigation-items a {
+  position: relative;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before {
+  width: 100%;
+}
+
+section {
+  padding: 50px 100px;
+}
+/**************************popup***************************************/
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  padding: 5px;
+}
+.popup-arrow {
+  display: none;
+}
+[role="tooltip"].popup-content {
+  min-width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 0 auto;
+  margin-top: -100px;
+  margin-left: -700px;
+}
+
+/***********************fom login *****************************************/
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
+
+.center {
+  position: relative;
+  padding: 50px;
+  padding-top: 10px;
+  width: 70%;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.center h1 {
+  font-size: 38px;
+  border-left: 5px solid #8bc342;
+  padding: 10px;
+  color: #000;
+  letter-spacing: 1px;
+  margin-bottom: 60px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.center .inputbox {
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+.center .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+.center .inputbox:last-child {
+  margin-bottom: 0;
+}
+.center .inputbox span {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-size: 1em;
+  transition: 0.6s;
+  font-family: sans-serif;
+}
+.center .inputbox input:focus ~ span,
+.center .inputbox input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+}
+.center .inputbox [type="button"] {
+  background-color: #8bc342;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+
+/******************************************************************/
