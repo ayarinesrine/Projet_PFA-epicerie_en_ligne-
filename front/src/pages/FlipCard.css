@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=Great+Vibes&family=Poppins&display=swap");
 body {
   margin: 0;
   display: flex;
@@ -251,13 +251,28 @@ body {
   border-color: white;
   text-shadow: none;
 }
+.texte {
+  letter-spacing: 0px !important;
+  color: rgb(34, 34, 34) !important;
+  font-size: 55px !important;
+  font-family: "Francois One", sans-serif !important;
+}
+.Rygimi {
+  margin-top: 100px;
+  font-family: "Great Vibes", Courier, monospace;
+  color: #8bc342;
+  font-size: 32px;
+}
 .paragraph {
+  margin-top: 100px;
   place-self: center;
   color: white;
+  letter-spacing: 0px !important;
+  font-size: 22px !important;
 }
 .button.return:hover {
   background-color: white;
-  color: #fff;
+  color: #8bc342;
   box-shadow: none;
 }
 
