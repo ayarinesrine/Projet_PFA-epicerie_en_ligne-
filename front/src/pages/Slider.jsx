@@ -4,9 +4,9 @@ import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import logo from "./../assets/image/logo25.png";
 import slider6 from "./../assets/video/slider6.mp4";
-import slider2 from "./../assets/video/slider2.webm";
-import slider3 from "./../assets/video/slider3.webm";
-
+import slider3 from "./../assets/video/slider4.mp4";
+import slider2 from "./../assets/video/slider5.mp4";
+import slider1 from "./../assets/video/slider1.mp4";
 export default class Slider extends Component {
   componentDidMount() {
     // JavaScript for responsive navigation menu
@@ -107,6 +107,20 @@ export default class Slider extends Component {
             muted
             loop
           ></video>
+               <video
+            className="video-slide"
+            src={slider1}
+            autoPlay
+            muted
+            loop
+          ></video>
+          <video
+            className="video-slide"
+            src={slider3}
+            autoPlay
+            muted
+            loop
+          ></video>
 
           <div className="content active">
             <h1>
@@ -140,7 +154,41 @@ export default class Slider extends Component {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <a href="#">Contactez-nous.</a>
+            <a href="#">Contactez-nous</a>
+          </div>
+          <div className="content">
+            <h1>
+              Rygimi
+              <br />
+              <span></span>
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <a href="#">Contactez-nous</a>
+          </div>
+          <div className="content">
+            <h1>
+              Rygimi
+              <br />
+              <span></span>
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <a href="#">Contactez-nous</a>
           </div>
           <div className="content">
             <h1>
