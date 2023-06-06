@@ -61,11 +61,11 @@ export default class Slider extends Component {
               <a href="#">Get start</a>
               <a href="#">Boutique en ligne</a>
               <a href="#">Contact</a>
-              <Popup trigger={<button> Trigger</button>}>
+              <Popup trigger={<button className="buttonPopup">Connecter</button>}>
                 <div>
                   <div className="center">
                     <h1>Se connecter</h1>
-                    <form>
+                    <form className="formPopup">
                       <div className="inputbox">
                         <input type="email" required="required" />
                         <span>Email</span>
@@ -77,7 +77,9 @@ export default class Slider extends Component {
                       <div className="inputbox">
                         <input type="button" value="Connexion" />
                       </div>
+                      <div>créer un compte</div>
                     </form>
+          
                   </div>
                 </div>
               </Popup>
