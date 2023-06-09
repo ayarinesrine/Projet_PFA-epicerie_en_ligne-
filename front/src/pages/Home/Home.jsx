@@ -7,7 +7,7 @@ import Produit from './Composants/Produit';
 import Contact from './Composants/Contact';
 import Steps from './Composants/Steps';
 import Footer from './Composants/Footer';
-import { Outlet, Link , useNavigate} from "react-router-dom";
+import {  useNavigate} from "react-router-dom";
 import axios from "axios";
 
  function Home() {

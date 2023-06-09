@@ -1,5 +1,17 @@
+h1{
+  font-family: "Francois One", sans-serif !important;
+  font-size: 60px;
+}
 
+.titre1{
 
+  font-family: "Poppins", sans-serif;
+  color: transparent!important;
+  font-size: 55px;
+  text-transform: uppercase !important;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0) !important;
+}
 .column1 {
    
     float: left;
@@ -23,19 +35,7 @@
     display: table;
     clear: both;
   }
-  h1{
-    font-family: "Francois One", sans-serif !important;
-    font-size: 60px;
-  }
-  .titre1{
-  
-    font-family: "Poppins", sans-serif;
-    color: transparent!important;
-    font-size: 55px;
-    text-transform: uppercase !important;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: rgb(0, 0, 0) !important;
-  }
+
   p{
     font-size: 15px;
     font-family: "Poppins", sans-serif;

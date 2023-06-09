@@ -1,238 +1,241 @@
-
 .containere {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 80%;
+
+  padding-top: 150px;
+  grid-gap: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
     width: 80%;
     margin: 50px auto;
     grid-gap: 20px;
-   
-    
 }
 /***********************************************************/
-
-
+#black{
+ color: black;
+ padding-bottom:2px ;
+}
+#black:hover{
+  text-decoration: underline;
+ }
+.logo5{
+  width: 150px;
+}
 .wrapperrr {
+  width: 300px;
+  height: 500px;
+  background: white;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0;
+  transform: scale(0.95);
+  transition: box-shadow 0.5s, transform 0.5s;
+}
 
-    width: 300px;
-    height: 500px;
-    background: white;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0;
-    transform: scale(0.95);
-    transition: box-shadow 0.5s, transform 0.5s;
-  }
-  
-  .wrapperrr:hover {
-    transform: scale(1);
-    box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
-  }
-  
-  .wrapperrr .containeeer {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .wrapperrr .containeeer .top {
-    height: 80%;
-    width: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-  }
-  
-  .wrapperrr .containeeer .bottomm {
-    width: 200%;
-    height: 20%;
-    transition: transform 0.5s;
-  }
-  
-  .wrapperrr .containeeer .bottomm.clicked {
-    transform: translateX(-50%);
-  }
-  
-  .wrapperrr .containeeer .bottomm h1,
-  .wrapperrr .containeeer .bottomm p {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .wrapperrr .containeeer .bottomm .lefttt {
-    height: 100%;
-    width: 50%;
-    background: #f4f4f4;
-    position: relative;
-    float: left;
-  }
-  
-  .wrapperrr .containeeer .bottomm .lefttt .detailsss {
-   
-    float: left;
-    width: calc(70% - 40px);
-  }
-  .wrapperrr .containeeer .bottomm .righttt .detailsss {
-    
-    float: right;
-    width: calc(70% - 40px);
-  }
-  
-  .wrapperrr .containeeer .bottomm .lefttt .buy {
-    float: right;
-    width: calc(30% - 2px);
-    height: 100%;
-    background: #f1f1f1;
-    transition: background 0.5s;
-    border-left: solid thin rgba(0, 0, 0, 0.1);
-  }
-  
-  .wrapperrr .containeeer .bottomm .lefttt .buy i {
-    font-size: 30px;
-    padding: 30px;
-    color: #254053;
-    transition: transform 0.5s;
-  }
-  
-  .wrapperrr .containeeer .bottomm .lefttt .buy:hover {
-    background: #A6CDDE;
-  }
-  
-  .wrapperrr .containeeer .bottomm .lefttt .buy:hover i {
-    transform: translateY(5px);
-    color: #00394B;
-  }
-  .lord_icon{
-    width: 50px;
-    margin: 0 auto;
-    display: grid;
-    place-self: center;
-  
-  }
-  .wrapperrr .containeeer .bottomm .righttt {
-    width: 50%;
-    background: #A6CDDE;
-    color: white;
-    float: right;
-    height: 200%;
-    overflow: hidden;
-  }
-  
-  .productName{
-    font-size: 14px;
-  }
-  .productPrice{
-    font-size: 14px;
-  }
-  .wrapperrr .containeeer .bottomm .righttt .donee {
-    width: calc(30% - 2px);
-    float: left;
-    transition: transform 0.5s;
-    border-right: solid thin rgba(255, 255, 255, 0.3);
-    height: 50%;
-    display: grid;
-    place-items: center;
-  }
-  
-  .wrapperrr .containeeer .bottomm .righttt .donee i {
-    font-size: 30px;
-    padding: 30px;
-    color: white;
-  }
-  
-  .wrapperrr .containeeer .bottomm .righttt .remove {
-    width: calc(30% - 1px);
-    clear: both;
-    border-right: solid thin rgba(255, 255, 255, 0.3);
-    height: 50%;
-    background: #BC3B59;
-    display: grid;
-    place-items: center;
-    transition: transform 0.5s, background 0.5s;
-  }
-  
-  .wrapperrr .containeeer .bottomm .righttt .remove:hover {
-    background: #9B2847;
-  }
-  
-  .wrapperrr .containeeer .bottomm .righttt .remove:hover i {
-    transform: translateY(5px);
-  }
-  
-  .wrapperrr .containeeer .bottomm .righttt .remove i {
-    transition: transform 0.5s;
-    font-size: 30px;
-    padding: 30px;
-    color: white;
-  }
-  
-  .wrapperrr .containeeer .bottomm:hover .remove,
-  .wrapperrr .containeeer .bottomm:hover .donee {
-    transform: translateY(-100%);
-  }
-  
-  .wrapperrr .insideee {
-    z-index: 9;
-    background: #8bc342;
-    width: 140px;
-    height: 140px;
-    position: absolute;
-    top: -70px;
-    right: -70px;
-    border-radius: 0 0 200px 200px;
-    transition: all 0.5s, border-radius 2s, top 1s;
-    overflow: hidden;
-  }
-  
-  .wrapperrr:hover .insideee {
-    width: 100%;
-    right: 0;
-    top: 0;
-    border-radius: 0;
-    height: 80%;
-  }
-  
-  .wrapperrr:hover .insideee .iconn {
-    opacity: 0;
-    right: 15px;
-    top: 15px;
-  }
-  
-  .wrapperrr:hover .insideee .contentsss {
-    opacity: 1;
-    transform: scale(1);
-    transform: translateY(0);
-  }
-  
-  .wrapperrr .insideee .iconn {
-    position: absolute;
-    right: 85px;
-    top: 85px;
-    color: white;
-    opacity: 1;
-  }
-  
-  .wrapperrr .insideee .contentsss {
-    padding: 5%;
-    opacity: 0;
-    transform: scale(0.5);
-    transform: translateY(-200%);
-    transition: opacity 0.2s, transform 0.8s;
-  }
-  
-  .wrapperrr .insideee .contentsss table {
-    text-align: left;
-    width: 100%;
-  }
-  
-  .wrapperrr .insideee .contentsss h1,
-  .wrapperrr .insideee .contentsss p,
-  .wrapperrr .insideee .contentsss table {
-    color: white;
-  }
-  
-  .wrapperrr .insideee .contentsss p {
-    font-size: 13px;
-  }
-  
+.wrapperrr:hover {
+  transform: scale(1);
+  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.wrapperrr .containeeer {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapperrr .containeeer .top {
+  height: 80%;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+
+.wrapperrr .containeeer .bottomm {
+  width: 200%;
+  height: 20%;
+  transition: transform 0.5s;
+}
+
+.wrapperrr .containeeer .bottomm.clicked {
+  transform: translateX(-50%);
+}
+
+.wrapperrr .containeeer .bottomm h1,
+.wrapperrr .containeeer .bottomm p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapperrr .containeeer .bottomm .lefttt {
+  height: 100%;
+  width: 50%;
+  background: #f4f4f4;
+  position: relative;
+  float: left;
+}
+
+.wrapperrr .containeeer .bottomm .lefttt .detailsss {
+  float: left;
+  width: calc(70% - 40px);
+}
+.wrapperrr .containeeer .bottomm .righttt .detailsss {
+  float: right;
+  width: calc(70% - 40px);
+}
+
+.wrapperrr .containeeer .bottomm .lefttt .buy {
+  float: right;
+  width: calc(30% - 2px);
+  height: 100%;
+  background: #f1f1f1;
+  transition: background 0.5s;
+  border-left: solid thin rgba(0, 0, 0, 0.1);
+}
+
+.wrapperrr .containeeer .bottomm .lefttt .buy i {
+  font-size: 30px;
+  padding: 30px;
+  color: #254053;
+  transition: transform 0.5s;
+}
+
+.wrapperrr .containeeer .bottomm .lefttt .buy:hover {
+}
+
+.wrapperrr .containeeer .bottomm .lefttt .buy:hover i {
+  transform: translateY(5px);
+}
+.lord_icon {
+  width: 50px;
+  margin: 0 auto;
+  display: grid;
+  place-self: center;
+}
+.wrapperrr .containeeer .bottomm .righttt {
+  width: 50%;
+
+  color: white;
+  float: right;
+  height: 200%;
+  overflow: hidden;
+}
+
+.productName {
+  font-size: 14px;
+}
+.productPrice {
+  font-size: 14px;
+}
+.wrapperrr .containeeer .bottomm .righttt .donee {
+  width: calc(30% - 2px);
+  float: left;
+  transition: transform 0.5s;
+  border-right: solid thin rgba(255, 255, 255, 0.3);
+  height: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.wrapperrr .containeeer .bottomm .righttt .donee i {
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+}
+
+.wrapperrr .containeeer .bottomm .righttt .remove {
+  width: calc(30% - 1px);
+  clear: both;
+  border-right: solid thin rgba(255, 255, 255, 0.3);
+  height: 50%;
+
+  display: grid;
+  place-items: center;
+  transition: transform 0.5s, background 0.5s;
+}
+
+.wrapperrr .containeeer .bottomm .righttt .remove:hover {
+}
+
+.wrapperrr .containeeer .bottomm .righttt .remove:hover i {
+  transform: translateY(5px);
+}
+
+.wrapperrr .containeeer .bottomm .righttt .remove i {
+  transition: transform 0.5s;
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+}
+
+.wrapperrr .containeeer .bottomm:hover .remove,
+.wrapperrr .containeeer .bottomm:hover .donee {
+  transform: translateY(-100%);
+}
+
+.wrapperrr .insideee {
+  z-index: 9;
+  background: #8bc342;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: -70px;
+  right: -70px;
+  border-radius: 0 0 200px 200px;
+  transition: all 0.5s, border-radius 2s, top 1s;
+  overflow: hidden;
+}
+
+.wrapperrr:hover .insideee {
+  width: 100%;
+  right: 0;
+  top: 0;
+  border-radius: 0;
+  height: 80%;
+}
+
+.wrapperrr:hover .insideee .iconn {
+  opacity: 0;
+  right: 15px;
+  top: 15px;
+}
+
+.wrapperrr:hover .insideee .contentsss {
+  opacity: 1;
+  transform: scale(1);
+  transform: translateY(0);
+}
+
+.wrapperrr .insideee .iconn {
+  position: absolute;
+  right: 85px;
+  top: 85px;
+  color: white;
+  opacity: 1;
+}
+
+.wrapperrr .insideee .contentsss {
+  padding: 5%;
+  opacity: 0;
+  transform: scale(0.5);
+  transform: translateY(-200%);
+  transition: opacity 0.2s, transform 0.8s;
+}
+
+.wrapperrr .insideee .contentsss table {
+  text-align: left;
+  width: 100%;
+}
+
+.wrapperrr .insideee .contentsss h1,
+.wrapperrr .insideee .contentsss p,
+.wrapperrr .insideee .contentsss table {
+  color: white;
+}
+
+.wrapperrr .insideee .contentsss p {
+  font-size: 13px;
+}

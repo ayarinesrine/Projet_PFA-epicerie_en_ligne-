@@ -5,6 +5,7 @@ import Singup from "./pages/creerCompte/Singup";
 import Boutique from "./pages/Boutique/Boutique"
 import Formulaire from "./pages/Formulaire/Formulaire"
 import Basket from "./pages/Basket/Basket";
+
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ function App() {
           <Route path="products" element={<Boutique/>} />
           <Route path="formulaire" element={<Formulaire/>} />
           <Route path="basket" element={<Basket/>} />
+          
       </Routes>
     </BrowserRouter>
   );

@@ -1,18 +1,26 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Boutique.css";
+import Popup from "reactjs-popup";
+import {  Link } from "react-router-dom";
+
+
+import "reactjs-popup/dist/index.css";
+import logo from "./../../assets/image/logo5.png";
 import trash from "./../../assets/image/trash.gif"
 import done from "./../../assets/image/done.gif"
 function Boutique() {
     const [products , setProducts] = useState([])
-
+    const [clicked, setClicked] = useState(false);
     useEffect(()=>{
       axios.get("http://localhost:3636/product" ).then(({data})=>{
         var m = data 
         for(var i = 0 ; i < m.length ; i++){
            m[i].checked = false 
+           setClicked(false);
         }
         setProducts(m)
+        
       })
 
     } , [])
@@ -25,6 +33,7 @@ function Boutique() {
             if(m[i]._id === e._id){
               console.log("kdkdkdkdkdkdkddkkd")
               m[i].checked = true 
+              setClicked(true);
             }
         }    
         setProducts(m)
@@ -42,13 +51,74 @@ function Boutique() {
     for(var i = 0 ; i < m.length ; i++){
         if(m[i]._id === e._id){
           m[i].checked = false 
+          setClicked(false);
         }
     }    
     setProducts(m)
   };
 
   return (
+    <div>
+          <header className="head">
+          <a href="#" className="brand">
+            <img className="logo5" src={logo} />
+          </a>
+          <div className="menu-btn"></div>
+          <div className="navigation">
+            <div className="navigation-items">
+              <a id="black" href="/">Acceuil</a>
+              <a id="black"href="formulaire">Get start</a>
+              <a id="black" href="#">Boutique en ligne</a>
+             
+              <Popup trigger={<a id="black"> Connexion</a>}>
+                <div>
+                  <div className="center">
+                    <h1>Se connecter</h1>
+                    <div>
+                      <div className="inputbox">
+                        <input
+                          type="email"
+                          required="required"
+                          onChange={(e) => {
+                            this.setState({ email: e.target.value });
+                          }}
+                        />
+                        <span>Email</span>
+                      </div>
+                      <div className="inputbox">
+                        <input
+                          type="password"
+                          required="required"
+                          onChange={(e) => {
+                            this.setState({ password: e.target.value });
+                          }}
+                        />
+                        <span>Password</span>
+                      </div>
+                      <div className="inputbox">
+                        <button
+                          onClick={() => {
+                            this.props.login(
+                              this.state.email,
+                              this.state.password
+                            );
+                          }}
+                        >
+                          Connexion
+                        </button>
+                      </div>
+                      <div>
+                        <Link to="/Signup">Créer Compte</Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Popup>
+            </div>
+          </div>
+        </header>
     <div className="containere">
+  
     {products.map((e) => {
       return (
         <div className="wrapperrr">
@@ -92,7 +162,7 @@ function Boutique() {
       </div>
       );
     })}
-  </div>
+  </div></div>
   );
 }
 

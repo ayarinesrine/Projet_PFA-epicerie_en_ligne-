@@ -6,11 +6,13 @@
 .left-section {
   float: left;
   width: 30%;
+  
 }
 
 
 
 .right-section {
+  margin-top: 50px;
   border-radius: 35% 0 0 35%;
    height: 551px;
   padding: 170px;

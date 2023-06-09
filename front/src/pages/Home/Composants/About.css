@@ -5,13 +5,19 @@
   }
   .item11 { grid-area: 1 / 2; }
 
-  .par1 {
-    font-family: "Francois One", sans-serif !important;
-    font-size: 77px;
-    padding: 50px;
-    color: #8bc342;
+
+  
+.par1 {
+  font-family: "Francois One", sans-serif !important;
+  font-size: 77px;
+  padding: 50px;
+  color: #8bc342;
 }
 .p2{
     padding: 50px;
 
+}
+.im{
+  margin-top: 30px;
+  margin-bottom: -60px;
 }

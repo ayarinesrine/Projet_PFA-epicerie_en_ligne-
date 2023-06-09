@@ -50,10 +50,12 @@ body {
     font-family: Roboto;
 }
 #timeline {
-    padding: 100px 0;
+    padding-top: 100px ;
+    margin-bottom: -100px ;
     background: #f7f7f7;
     border-top: 1px solid rgba(191, 191, 191, 0.4);
     border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+   
 }
 #timeline h1 {
     text-align: center;

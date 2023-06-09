@@ -2,11 +2,10 @@
     width: 100px;
 }
 
-.containere {
+.formulaire {
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
-    width: 80%;
-    margin: 50px auto;
+    width: 100%;
     grid-gap: 20px;
+ 
     
 }

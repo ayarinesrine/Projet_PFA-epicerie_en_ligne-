@@ -1,4 +1,4 @@
-.container {
+.container_sin {
     display: grid;
     height: 100vh;
     background-image: url(../../assets/image/image1.jpg);
@@ -6,7 +6,7 @@
    width: 100%;
    grid-template-areas:". a" ;
   }
-  .form{
+  .form_sin{
     grid-area: a;
     width: 100%;
     place-self: center;

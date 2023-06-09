@@ -12,15 +12,13 @@ import slider2 from "./../../../assets/video/slider5.mp4";
 import slider1 from "./../../../assets/video/slider1.mp4";
 import slider4 from "./../../../assets/video/slider2.mp4";
 
-
-
 export default class Slider extends Component {
-  constructor(props){
-    super(props)
+  constructor(props) {
+    super(props);
     this.state = {
-       email : "",
-       password : ""
-    }
+      email: "",
+      password: "",
+    };
   }
   componentDidMount() {
     // JavaScript for responsive navigation menu
@@ -61,7 +59,6 @@ export default class Slider extends Component {
     });
   }
 
-
   render() {
     return (
       <div>
@@ -73,26 +70,48 @@ export default class Slider extends Component {
           <div className="navigation">
             <div className="navigation-items">
               <a href="#">Acceuil</a>
-              <a href="#">Get start</a>
-              <a href="#">Boutique en ligne</a>
-              <a href="#">Contact</a>
-              <Popup trigger={<button> Trigger</button>}>
+              <a href="formulaire">Get start</a>
+              <a href="products">Boutique en ligne</a>
+              <Popup trigger={<a> Connexion</a>}>
                 <div>
                   <div className="center">
                     <h1>Se connecter</h1>
                     <div>
                       <div className="inputbox">
-                        <input type="email" required="required" onChange={(e)=>{this.setState({email : e.target.value})}} />
+                        <input
+                          type="email"
+                          required="required"
+                          onChange={(e) => {
+                            this.setState({ email: e.target.value });
+                          }}
+                        />
                         <span>Email</span>
                       </div>
                       <div className="inputbox">
-                        <input type="password" required="required" onChange={(e)=>{this.setState({password : e.target.value})}} />
+                        <input
+                          type="password"
+                          required="required"
+                          onChange={(e) => {
+                            this.setState({ password: e.target.value });
+                          }}
+                        />
                         <span>Password</span>
                       </div>
                       <div className="inputbox">
-                        <button onClick={()=>{this.props.login(this.state.email ,this.state.password  )}}>Connexion</button>
+                        <button
+                          onClick={() => {
+                            this.props.login(
+                              this.state.email,
+                              this.state.password
+                            );
+                          }}
+                        >
+                          Connexion
+                        </button>
                       </div>
-                      <div><Link to="/Signup">Créer Compte</Link></div>
+                      <div>
+                        <Link to="/Signup">Créer Compte</Link>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -123,7 +142,7 @@ export default class Slider extends Component {
             muted
             loop
           ></video>
-               <video
+          <video
             className="video-slide"
             src={slider1}
             autoPlay
@@ -145,13 +164,13 @@ export default class Slider extends Component {
               <span></span>
             </h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Découvrez notre sélection de produits bio soigneusement choisis
+              pour vous. Que vous ayez des allergies, des intolérances ou des
+              restrictions alimentaires, nous avons ce qu'il vous faut. Notre
+              équipe d'experts en nutrition vous propose une liste de produits
+              qui vous aideront à respecter vos besoins alimentaires tout en
+              vous régalant. Commandez facilement en ligne et faites-vous livrer
+              à votre porte.
             </p>
             <a href="#">Contactez-nous</a>
           </div>
