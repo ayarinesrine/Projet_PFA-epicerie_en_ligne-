@@ -1,0 +1,15 @@
+.container {
+    display: grid;
+    height: 100vh;
+    background-image: url(../../assets/image/image1.jpg);
+   background-size: cover;
+   width: 100%;
+   grid-template-areas:". a" ;
+  }
+  .form{
+    grid-area: a;
+    width: 100%;
+    place-self: center;
+  }
+  
+ 

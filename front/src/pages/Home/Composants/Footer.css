@@ -1,0 +1,37 @@
+.grid-container1 {
+    padding-top: 150px !important;
+    
+      display: grid;
+      grid-template-columns: auto auto  ;
+      background-color: #EEEEEE;
+    
+      border-radius: 90% 90% 0 0 / 30%;
+    }
+    
+    .grid-container1 > div {
+     
+    
+      text-align: center;
+      font-size: 30px;
+    }
+  
+    li.i1 {
+      float: left;
+      font-size: 15px;
+      font-weight: 100;
+      font-family: 'Poppins' !important;
+      padding: 10px;
+      color: #000;
+      list-style: none;
+  }
+  .pm {
+    font-family: 'Poppines' !important;
+    font-size: 44px;
+    color: #000;
+  }
+  .titre{
+    width: 50% !important;
+  }
+  .titre1{
+    width: 50% !important;
+  }

@@ -1,0 +1,34 @@
+.contai{
+  width: 100%;
+  overflow: hidden; /* Pour éviter que les éléments débordent */
+}
+
+.left-section {
+  float: left;
+  width: 30%;
+}
+
+
+
+.right-section {
+  border-radius: 35% 0 0 35%;
+   height: 551px;
+  padding: 170px;
+  margin-left: 302px;
+  background-color: #8bc342  ;
+ border-radius: 0 5;
+
+}
+h4 {
+  font-size: 55px;
+  font-family: 'Great Vibes';
+  color: #fff;
+  font-weight: 400;
+  padding-left: 252px;
+}
+
+.paragraphe2{
+  padding-left: 252px;
+  color: #fff;
+  font-size: 18px;
+}

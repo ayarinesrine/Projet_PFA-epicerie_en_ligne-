@@ -1,0 +1,30 @@
+.grid-container {
+
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+    padding: 10px;
+  }
+  .grid-item {
+    margin: auto;
+    margin-right: 104px;
+    font-size: 30px;
+  }
+  .image11{
+    width: 150px;
+  
+  }
+  .s{
+   color:#8bc342;
+  }
+  .titre3 {
+  
+     text-align: center;
+    font-size: 85px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .ti{
+   
+    font-size: 20px;
+    text-align: center;
+  
+  }
