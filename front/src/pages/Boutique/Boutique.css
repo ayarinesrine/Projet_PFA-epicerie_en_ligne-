@@ -14,8 +14,44 @@
 /***********************************************************/
 #black{
  color: black;
- padding-bottom:2px ;
+ text-decoration: none;
 }
+#black:hover{
+  text-decoration: underline;
+  color: black;
+  
+ }
+.productName{
+  font-size: 22px !important;
+  font-family: "montesserat" !important;
+  font-weight: 200;
+  padding: 5px  !important;
+}
+.productpp{
+  color: black  !important;
+}
+.productPrice {
+  font-size: 18px;
+  color: red;
+ font-weight: 500;
+
+}
+.navigation-itemsss{  display: grid;
+  width: 110%;
+  grid-template-columns: 1fr 1fr 1fr ;}
+.navigationn{
+  display: grid;
+  width: 60%;
+  margin-left: 50px;
+  padding-left: 100px;
+  grid-template-columns: 4fr 2fr;
+}
+.a_panier{
+  width: 50px;
+
+
+
+  }
 #black:hover{
   text-decoration: underline;
  }
@@ -90,6 +126,8 @@
 .wrapperrr .containeeer .bottomm .lefttt .buy {
   float: right;
   width: calc(30% - 2px);
+  display: grid;
+  place-items: center;
   height: 100%;
   background: #f1f1f1;
   transition: background 0.5s;
@@ -110,7 +148,7 @@
   transform: translateY(5px);
 }
 .lord_icon {
-  width: 50px;
+  width: 30px;
   margin: 0 auto;
   display: grid;
   place-self: center;
@@ -124,12 +162,7 @@
   overflow: hidden;
 }
 
-.productName {
-  font-size: 14px;
-}
-.productPrice {
-  font-size: 14px;
-}
+
 .wrapperrr .containeeer .bottomm .righttt .donee {
   width: calc(30% - 2px);
   float: left;
@@ -205,6 +238,7 @@
 
 .wrapperrr:hover .insideee .contentsss {
   opacity: 1;
+  color: white;
   transform: scale(1);
   transform: translateY(0);
 }

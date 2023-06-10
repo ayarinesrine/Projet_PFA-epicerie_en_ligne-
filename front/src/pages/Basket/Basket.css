@@ -1,0 +1,26 @@
+.panier_bottom{
+    margin-top: 200px;
+}
+.displaygrid{
+    display: grid;
+    grid-gap:2em;
+    width: 50%;
+    margin: 0 auto;
+}
+.btnRemove{
+    width: 100px;
+    height: 20px;
+}
+.div_formul_inputt{
+    border-radius:10px ;
+    height: 50px;
+}
+.img_panier{
+    width: 50px;
+}
+.gridcolum{
+    margin: 0 auto;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

@@ -12,7 +12,7 @@ export default class Bienvenu extends Component {
           <div className="column2">
             <h3 className="titre1">Bienvenu</h3>
             <h1>votre santé est notre priorité</h1>
-            <p className="p2">
+            <p className="pargr1">
               Nous sommes là pour vous offrir une alimentation saine et
               équilibrée grâce à notre sélection de produits biologiques de
               qualité supérieure. Faites confiance à Rygimi pour prendre soin de

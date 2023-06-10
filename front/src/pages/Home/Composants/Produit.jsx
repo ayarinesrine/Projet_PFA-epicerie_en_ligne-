@@ -4,7 +4,7 @@ import "./Produit.css"
 export default class Produit extends Component {
   render() {
     return (<div >
-      <h1 className="title">Nos Produits </h1>
+      <h1 className="titlee">Nos Produits </h1>
           <div className="FlipCard">
       <div className="wrapper">
         <div className="card">

@@ -73,7 +73,7 @@ export default class Slider extends Component {
               <a href="formulaire">Get start</a>
               <a href="products">Boutique en ligne</a>
               <Popup trigger={<a> Connexion</a>}>
-                <div>
+                <div >
                   <div className="center">
                     <h1>Se connecter</h1>
                     <div>
@@ -98,7 +98,7 @@ export default class Slider extends Component {
                         <span>Password</span>
                       </div>
                       <div className="inputbox">
-                        <button
+                        <button className="button_con"
                           onClick={() => {
                             this.props.login(
                               this.state.email,
@@ -110,7 +110,7 @@ export default class Slider extends Component {
                         </button>
                       </div>
                       <div>
-                        <Link to="/Signup">Créer Compte</Link>
+                        <Link to="/Signup" className="creer">Créer Compte</Link>
                       </div>
                     </div>
                   </div>

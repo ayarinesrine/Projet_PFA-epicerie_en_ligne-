@@ -16,7 +16,9 @@ const MyForm = () => {
       if(data.token){
         localStorage.setItem("token" , data.token)
         navigate("/formulaire");
-      }
+      } 
+    }).catch((err)=>{
+      alert("Eroooor")
     })
   }
   return (

@@ -10,7 +10,7 @@ export default class About extends Component {
         </div>
         <div className="item2">
         <h1 className="par1">votre santé est notre priorité</h1>
-            <p>
+            <p  className="pargr1">
               Chez Rygimi, nous plaçons nos valeurs au cœur de notre entreprise.
               Nous croyons en une alimentation saine, respectueuse de
               l'environnement et source de bien-être. Notre engagement envers la

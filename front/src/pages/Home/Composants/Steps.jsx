@@ -8,14 +8,14 @@ export default class Steps extends Component {
     return (
       <div id="timeline">
       <h1>Les etapes </h1>
-      <p className="leader">lorem upsuim </p>
+      <p className="leader"></p>
       <div className="demo-card-wrapper">
         <div className="demo-card demo-card--step1">
           <div className="head">
             <div className="number-box">
               <span>01</span>
             </div>
-            <h2><span className="small">rygimi  </span>  Remplissez le formulaire personnalisé</h2>
+            <h3><span className="small">rygimi  </span>  Remplissez le formulaire personnalisé</h3>
             
           </div>
           <div className="body">
@@ -30,7 +30,7 @@ export default class Steps extends Component {
             <div className="number-box">
               <span>02</span>
             </div>
-            <h2><span className="small">rygimi</span>Recevez votre régime alimentaire personnalisé </h2>
+            <h3><span className="small">rygimi</span>Recevez votre régime alimentaire personnalisé </h3>
           </div>
           <div className="body">
             <p>Notre équipe d'experts en nutrition vous enverra par e-mail une liste de produits adaptés à votre régime alimentaire spécifique.</p>
@@ -43,7 +43,7 @@ export default class Steps extends Component {
             <div className="number-box">
               <span>03</span>
             </div>
-            <h2><span className="small">Rygimi</span> Explorez notre sélection de produits</h2>
+            <h3><span className="small">Rygimi</span> Explorez notre sélection de produits</h3>
             
           </div>
           <div className="body">
@@ -57,7 +57,7 @@ export default class Steps extends Component {
             <div className="number-box">
               <span>04</span>
             </div>
-            <h2><span className="small">Rygimi</span> Ajoutez les produits à votre panier</h2>
+            <h3><span className="small">Rygimi</span> Ajoutez les produits à votre panier</h3>
           </div>
           <div className="body">
             <p> Sélectionnez les produits qui vous intéressent et ajoutez-les à votre panier.</p>
@@ -70,7 +70,7 @@ export default class Steps extends Component {
             <div className="number-box">
               <span>05</span>
             </div>
-            <h2><span className="small">Rygimi</span> Finalisez votre commande</h2>
+            <h3><span className="small">Rygimi</span> Finalisez votre commande</h3>
           </div>
           <div className="body">
             <p> Procédez au paiement en utilisant nos options sécurisées et vérifiez les détails de votre commande avant de la valider.</p>

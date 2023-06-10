@@ -6,6 +6,77 @@
     display: grid;
     width: 100%;
     grid-gap: 20px;
- 
+  
     
+    
+}
+.logo55{
+    width: 150px;
+    margin-left: -150px;
+}
+.formulaire_h1{
+    text-align: center;
+    font-size: 55px;
+  font-family: 'Great Vibes' !important;
+
+  font-weight: 400;
+ margin-top: 50px;
+}
+.buttonSimple{
+    border-radius:10px ; 
+    background-color: #8bc342;
+    border: 2px solid #ffffff;
+  
+    border-radius: 10px;
+    height: 50px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+ padding-left: 5px;
+ padding-right: 5px;
+    margin: 0 auto;
+    place-self: center;
+}
+.div_formul_voir_panier{
+    border-radius:10px ; 
+    background-color: #8bc342;
+    border: 2px solid #ffffff;
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 auto;
+    place-self: center;
+    margin-top: -30px;
+}
+.div_formul_button{
+    border-radius:10px ; 
+    background-color: #8bc342;
+    border: 2px solid #ffffff;
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+.div_formul_input{
+    border-radius:10px ;
+}
+.div_formul{
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    height: 70vh;
+    grid-gap: 2em;
+}
+.div_formul_total{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-top: 200px;
 }

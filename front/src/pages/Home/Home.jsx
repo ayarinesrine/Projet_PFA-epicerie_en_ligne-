@@ -23,6 +23,8 @@ import axios from "axios";
         navigate("/formulaire");
 
       }
+    }).catch((err)=>{
+      alert("Eroooor")
     })
   }
 
